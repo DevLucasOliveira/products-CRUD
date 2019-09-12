@@ -7,6 +7,7 @@ public class ProdutoView extends javax.swing.JFrame {
     public ProdutoView() {
         initComponents();
         setLocationRelativeTo(null);
+      
         
     }
   
