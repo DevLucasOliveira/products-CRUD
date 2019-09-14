@@ -7,7 +7,6 @@ import java.sql.Statement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 
-
 public class ProdutoDAO {
     
     private Connection conn;
@@ -16,12 +15,10 @@ public class ProdutoDAO {
     private ResultSet rs;
     private ArrayList<Produto> lista = new ArrayList <>();
     
-    
     public ProdutoDAO(){
         conn = new ConnectionFactory().getConexao();
     }
 
-    
     public void inserir(Produto produto){
         String sql = "INSERT INTO produto (descricao_produto, preco_produto) VALUES (?,?)";
         try{
@@ -47,7 +44,6 @@ public class ProdutoDAO {
         }catch(Exception erro){
             throw new RuntimeException("Erro 3: "+erro);
         }
-        
     }
     
     public void excluir(int valor){
@@ -98,10 +94,4 @@ public class ProdutoDAO {
         return lista;
     }
     
-    
-    
-    
-   
-    
-         
 }
