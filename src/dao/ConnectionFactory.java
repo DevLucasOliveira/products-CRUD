@@ -8,7 +8,7 @@ public class ConnectionFactory {
 
     public Connection getConexao(){
         try{
-            return DriverManager.getConnection("jdbc:mysql://localhost","root","a102030a");
+            return DriverManager.getConnection("jdbc:mysql://localhost/mercado","root","");
         }catch(Exception erro){
             throw new RuntimeException("Erro 1: "+erro);
         }

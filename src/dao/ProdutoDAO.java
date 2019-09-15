@@ -13,7 +13,7 @@ public class ProdutoDAO {
     private PreparedStatement stmt;
     private Statement st;
     private ResultSet rs;
-    private ArrayList<Produto> lista = new ArrayList <>();
+    private ArrayList<Produto> lista = new ArrayList <Produto>();
     
     public ProdutoDAO(){
         conn = new ConnectionFactory().getConexao();
