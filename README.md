@@ -1,7 +1,7 @@
-#CRUD-Products
+# CRUD-Products
 
 
-Simple CRUD ** connected ** to the database with the following features:
+Simple CRUD **connected** to the database with the following features:
 
 - To clean
 - Delete
